@@ -1,0 +1,312 @@
+
+@font-face {
+font-family: metal;
+src: url(../fonts/metal.ttf);
+}
+
+@font-face {
+font-family: permanent;
+src: url(../fonts/permanent.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Permanent+Marker|Rock+Salt');
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	background-image: url(../img/fondo3.jpg);
+/*	background-repeat: repeat-y;*/
+/*	background-size: contain;*/
+}
+
+
+/*-------------------------ESTILOS DEL BANNER------------------------------*/
+
+#Slogan{
+
+	margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 100px;
+    color: red;
+ 	font-family: permanent;
+ 	font-size: 50px;
+
+}
+
+
+#Titulo{
+	
+	margin: 0;
+	font-family: metal;
+	font-size: 100px;
+	color:red;
+}
+
+#contenedor_banner{
+	padding: 0px;
+	margin:0px;
+	overflow: hidden;
+	padding-left: 100px;
+    padding-right: 100px;
+  /*  background: rgba(0,0,0,0.7);*/
+height: 200px;
+}
+
+#cont_titulo{
+	float: left;
+
+}
+
+#cont_contacto{
+	float: right;
+	padding-top: 36px;
+}
+
+.tit{
+	color: white;
+	font-size: 15px;
+}
+
+.tit_ppal{
+	color: white;
+	font-family: bold;
+	font-size: 20px;
+}
+/*-------------------------ESTILOS DEL MENU------------------------------*/
+
+#Menu{
+
+	background-color: black;
+}
+
+/*-------------------------ESTILOS DE BASE------------------------------*/
+
+img{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	margin: auto;
+}
+
+.container--flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*-------------------------ESTILOS FOOTER------------------------------*/
+
+.main-footer{
+	background-color:black;
+}
+
+.column__title{
+	font-family: metal;
+	color: red;
+	font-weight: bold;
+
+}
+
+.column__txt{
+	color: white;
+}
+
+.copy{
+	color: red;
+	text-align: center;
+}
+.icons{
+
+	color: white;
+}
+
+.column--33{
+	    margin-bottom: 59px;
+}
+
+/*--------------------ESTILOS CUERPO--------------------*/
+.today--special__title{
+	color: 	white;
+}
+
+.main__about__description{
+	background:rgba(0,0,0,0.7);
+}
+    
+/*------------------------- TRANSICION---------------------*/
+
+.slider{
+
+	/*width: 95%;*/
+	margin: auto;
+	overflow: hidden;
+	background: rgba(0,0,0,0.7);
+    width: 100%;
+  }
+
+.slider ul{
+	
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 20s infinite alternate;
+	animation-timing-function: ease-in;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.image{
+	width: 700px;
+    height: 430px;
+    margin:auto;
+
+}
+
+/*---TEXTO SOBRE LAS IMAGENES---*/
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+ 
+.texto_encima{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    color: white;
+    font-size: 30px; 
+    /*font-family: bold;*/
+/*    font-family: 'Permanent Marker', cursive;*/
+     font-family: permanent;
+}
+
+@keyframes cambio{
+	0% { margin-left: 0; }
+	20% { margin-left: 0; }
+
+	25%{ margin-left: -100%; }
+	45%{ margin-left: -100%; }
+
+	50%{ margin-left: -200%; }
+	70%{ margin-left: -200%; }
+
+	75%{ margin-left: -300%; }
+	100%{ margin-left: -300%; }
+
+}
+
+/*------Primer clase gratis, etc-----*/
+
+#novedades{
+	text-align: center;
+	font-family: metal;
+	font-size: 50px;
+	color: red;
+
+}
+
+#contenedor1{
+	padding: 10px;
+	overflow: hidden;
+	padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(0,0,0,0.7);
+
+}
+
+#im1_der{
+	float: left;
+}
+ 
+#im2_izq{
+	float: right;
+}
+
+#contenedor2{
+	padding: 10px;
+	overflow: hidden;
+	padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(0,0,0,0.7);
+    margin-bottom: 50px;
+
+}
+
+#im3_der{
+	float: left;
+}
+ 
+#im4_izq{
+	float: right;
+	width: 500px;
+	height: 300px;
+}
+
+.imagen_pie{
+	width: 500px;
+	height: 300px;
+}
+
+/*-----------Letras----------*/
+.titulo_text{
+	text-align: center;
+	font-family: metal;
+	font-size: 20px;
+	color: white;
+}
+
+.cuerpo_text{
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	color: white;
+}
+/*--------------------POR QUE ELEGIRNOS?-----------*/
+
+#porque{
+	color: red;
+	font-size: 50px;
+	font-family: metal;
+
+}
+
+#rta{
+	color: white;
+	font-size:15px;
+}
+
+#foto_porque{
+	padding-top: 20 px;
+	padding-bottom:  20px;
+	margin: 20px;
+	height: 600px;
+	width: 400px;
+	margin: auto;
+}
+
+#foto_pq{
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/*--------------------CLASES-----------------*/
+
